@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color:lightgreen;
+}
+.header{
+    width: 100%;
+    max-width: 550px;
+    background-color:hotpink;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px; 
+}
+.container-title {
+    font-size: 25px;
+    text-align: center;
+    margin: 0 0 30px 0;
+    color:black;
+}
+.container-title h2 img{
+    width: 60px;
+    height: 40px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.inputcol {
+    display: flex;
+    width: 100%;
+    height: 35px;
+    align-items: center;
+    background-color:whitesmoke;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom:10px;
+}
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size:20px;
+
+}
+
+.buttoninput {
+    border: none;
+    height:35px;
+    width:80px;
+    outline: none;
+    background:limegreen;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 30px;
+
+}
+
+.buttoninput:hover {
+    background-color:limegreen;
+}
+.todolist {
+    margin-top: 20px;
+    margin-right:150px;
+}
+
+.itemall {
+    display: grid;
+    grid-template-columns: 60% 5% 5%;
+    margin-bottom: 2px;
+}
+.check-button, .trash-button {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 2px;
+
+}
+.item {
+    background-color:hotpink;
+    border: none;
+    display: flex;
+    margin-left:30px;
+    min-height:25px;
+    border-radius:25px;
+    font-size: 20px;
+    margin-bottom: 3px;
+    color:black;
+}
+.check-button{
+   margin-left:27%;
+   width:30px;
+   height: 25px;
+   font-size: 18px;
+   background-color:green;
+   color: white;
+   border: none;
+   outline: none;
+}
+
+.trash-button {
+    margin-left:30%;
+    width:30px;
+    height: 25px;
+   font-size: 18px;
+    background-color:red;
+    color: white;
+    border: none;
+    outline: none;
+}
+.checklist {
+    text-decoration: line-through;
+}
+
+.fa-check, .fa-trash {
+    pointer-events: none;
+}
+
+button, .check-button, .trash-button {
+    cursor: pointer;
+}
